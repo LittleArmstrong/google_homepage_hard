@@ -5,6 +5,13 @@ body {
     font-size: 14px;
 }
 
+span {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+ }
 
 #layout{
     display: grid;
@@ -43,21 +50,18 @@ body {
 }
 
 #search-cross-image {
-    display: inline-block;
     position: absolute;
     top: 30px;
     right: 20px;
 }
 
 #search-image {
-    display: inline-block;
     fill: rgb(23, 137, 245);
     height: 25px;
     width: 25px;
 }
 
 #search-cross {
-    display: inline-block;
     height: 25px;
     width: 25px;
     margin-right: 10px;
@@ -68,3 +72,38 @@ body {
     stroke: rgb(110, 110, 110);
     stroke-width: 3;
 }
+
+#header-right {
+    grid-area: header-right;
+    justify-self: end;
+    margin-right: 45px;
+}
+
+#app {
+    position: relative;
+    display: inline-block;
+    background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+    background-size: 528px 68px;
+    height: 30px;
+    width: 30px;
+    background-position: -132px -38px;
+    opacity: .55;
+    background-color: transparent;
+    top: 30px;
+}
+
+#login {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    color: #fff;
+    background-color: rgb(35, 117, 248);
+    border-radius: 4px;
+    border: 1px solid rgb(35, 117, 248);
+    line-height: 34px;
+    height: 34px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 15px;
+}
+
