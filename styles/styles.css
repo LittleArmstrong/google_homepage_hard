@@ -15,7 +15,7 @@ a {
 
 #layout{
     display: grid;
-    grid-template-columns: auto auto 1fr;
+    grid-template-columns: auto 680px 1fr;
     grid-template-rows: auto auto;
     grid-template-areas: 
     "header-left header-middle header-right"
@@ -28,11 +28,11 @@ a {
     grid-area: header-left;
     margin-top: 28px;
     margin-left: 24px;
+    margin-right: 50px;
 }
 
 #nav-search {
     grid-area: header-middle;
-    padding-left: 50px;
     position:relative;
 }
 
@@ -56,7 +56,7 @@ a {
 #search-cross-image {
     position: absolute;
     top: 30px;
-    right: 20px;
+    right: 10px;
 }
 
 .size-svg-search {
@@ -90,7 +90,7 @@ a {
     top: 3px;
 }
 
-a:visited {
+a[class="nav-visited-color"]:visited {
     color: gray;
 }
 
@@ -150,12 +150,21 @@ a[id="nav-focus"]:visited {
     border: 1px solid transparent;
 }
 
-#horizontal-border {
+hr {
     display: block;
     position: relative;
     bottom: 7px;
     grid-column: 1/4;
+    grid-row:2/3;
     width: 100%;
     color: rgba(255, 255, 255,0.3);
 
+}
+
+#content-container{
+    grid-area: content;
+}
+
+.content-spacing{
+    margin-left: 25px;
 }
