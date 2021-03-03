@@ -9,182 +9,220 @@ span {
     display: inline-block;
 }
 
-a {
+a{
     text-decoration: none;
- }
+}
 
-#layout{
+#container {
     display: grid;
-    grid-template-columns: auto 680px 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: auto 700px 1fr ;
     grid-template-areas: 
-    "header-left header-middle header-right"
-    ". content .";
+    "header header  header"
+    ". main . "
+    "footer footer footer ";
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 25px;
+    width: 100%;
+    border-bottom: solid 1px rgb(231, 230, 230);
+} 
+
+#header-upper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#header-left{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 850px; 
 }
 
 #logo {
-    width: 90px;
-    height: 30px;
-    grid-area: header-left;
-    margin-top: 28px;
     margin-left: 24px;
-    margin-right: 50px;
 }
 
-#nav-search {
-    grid-area: header-middle;
-    position:relative;
+#searchnav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-#search {
+#searchform{
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#searchbar{
     width: 665px;
-    border-radius: 25px;
-    height: 40px;
-    line-height: 40px;
-    margin-top: 22px;
-    box-shadow:  0px 1px 1px rgba(0, 0, 0, 0.1);
-    border: 1px solid #dfdfdf;
-    background-color: transparent;
-    padding-left: 20px;
+    height: 37px;
     font-size: 16px;
+    padding: 5px 4px 0 20px;
+    border-radius: 25px;
+    border: 1px solid #dfe1e5
 }
 
-#search:hover {
-    box-shadow: 0px 0px 3px 1px rgba(180, 180, 180, 0.5);
+#searchbar:hover{
+    box-shadow: 0px 0px 5px 1px rgb(228, 228, 228);
 }
 
-#search-cross-image {
+#searchbar:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px 1px rgb(228, 228, 228);
+}
+
+#buttons{
+    display: flex;
     position: absolute;
-    top: 30px;
+    right: 18px;
+}
+
+.close-color{
+    color: #80868b;
+    fill: currentColor;
+}
+
+.mglas-color{
+    color: rgb(66, 133, 244);
+    fill: currentColor;
+}
+
+#divider {
+    border-left: solid rgb(223, 225, 229) 0.8px;
+}
+
+.button-width{
+    width:24px;
+}
+
+.button-spacing {
+    margin-left: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 7px 0px 0px 170px;
+    font-size: 13px;
+    color: #5f6368;
+}
+
+nav a:visited{
+    color: #5f6368;
+    fill: currentColor;
+}
+
+.selected-nav{
+    color: rgb(26, 115, 232);
+    border-bottom: solid 2.4px rgb(26, 115, 232);
+}
+
+.selected-nav :visited{
+    color: rgb(26, 115, 232);
+}
+
+.nav-link-distance{
+    line-height: 16px;
+}
+
+.nav-link{
+    display: inline-block;
+    position: relative;
+    padding: 16px 12px 12px 10px;
+    text-align: start;
+}
+
+.flex-row{
+    display: flex;
+}
+
+#nav-right{
+    margin-left: 20px;
+    margin-top: 3px;
+}
+
+.symbols-size {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 2px;
+}
+
+#header-right{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 150px;
+}
+
+#apps{
+    fill: rgb(95, 99, 104);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 3px;
+}
+
+#apps-img{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#apps:hover{
+    background-color:  rgba(223, 219, 219, 0.5);
+}
+
+
+#konto {
+    width: 40px;
+    height: 40px;
+    position: relative;
     right: 10px;
 }
 
-.size-svg-search {
-    height: 25px;
-    width: 25px;    
-}
-
-#search-cross {
-    margin-right: 10px;
-}
-
-.nav-spacing {
-    margin-top: 25px;
-    margin-left: 15px;
-    font-size: 13px;
-    padding-bottom: 10px;
-    fill: gray;
-}
-
-.nav-spacing-right{
-    margin-left: 35px;
-}
-
-.size-svg-nav {
-    width:16px;
-    height:16px;
-}
-
-.nav-position {
-    position: relative;
-    top: 3px;
-}
-
-a[class="nav-visited-color"]:visited {
-    color: gray;
-}
-
-a[id="nav-focus"]:visited {
-    color:rgb(26, 115, 232);
-}
-
-a[class="nav-visited-color"] {
-    color: gray;
-}
-
-#alle {
-    color:rgb(26, 115, 232);
-    border-bottom: medium solid rgb(26, 115, 232);
-    padding: 0 15px 10px 10px;
-
-}
-
-#header-right {
-    grid-area: header-right;
-    justify-self: end;
-    margin-right: 45px;
-}
-
-#app {
-    position: relative;
+#konto a {
     display: inline-block;
-    background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
-    background-size: 528px 68px;
-    height: 40px;
     width: 40px;
-    background-position: -127px -33px;
-    opacity: .55;
-    background-color: transparent;
-    top: 24px;
+    height: 40px;
+    margin-right: 50px;
+}
+
+#konto img{
+    display: inline-block;
     border-radius: 50%;
 
 }
 
-#app:hover {
-    background-color:  rgba(180, 180, 180, 0.5);
+#konto img:hover{
+    box-shadow: 0 0 0px 5px rgba(222, 222, 222, 0.5);
 }
 
-#login {
-    position: relative;
-    top: 10px;
-    display: inline-block;
-    color: #fff;
-    background-color: rgb(35, 117, 248);
-    border-radius: 4px;
-    border: 1px solid rgb(35, 117, 248);
-    line-height: 34px;
-    height: 34px;
-    padding-left: 25px;
-    padding-right: 25px;
-    margin-left: 15px;
+main {
+    grid-area: main;
 }
 
-#login:hover {
-    background-color: rgb(58, 133, 255);
-    border: 1px solid transparent;
-}
-
-hr {
-    display: block;
-    position: relative;
-    bottom: 7px;
-    grid-column: 1/4;
-    grid-row:2/3;
-    width: 100%;
-    color: rgba(255, 255, 255,0.3);
-
-}
-
-#content-container{
-    grid-area: content;
-    font-size: 20px;
-}
-
-.content-spacing{
-    margin-left: 25px;
-}
-
-#small-text{
-    font-size: 14px;
-}
-
-#highlight {
-    font-size: 16px;
-    text-align: justify;
-    border: 1px solid rgb(206, 206, 206);
-    padding-left: 15px;
-    padding-right: 15px;
-    border-radius: 10px;
-    line-height: 20px;
-    color: rgba(0,0,0,0.9)
+footer {
+    grid-area: footer;
 }
