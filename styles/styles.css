@@ -13,18 +13,8 @@ a{
     text-decoration: none;
 }
 
-#container {
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: auto 700px 1fr ;
-    grid-template-areas: 
-    "header header  header"
-    ". main . "
-    "footer footer footer ";
-}
 
 header {
-    grid-area: header;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -40,7 +30,6 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
 
 #header-left{
     display: flex;
@@ -71,9 +60,10 @@ header {
     width: 665px;
     height: 37px;
     font-size: 16px;
-    padding: 5px 4px 0 20px;
+    padding: 5px 4px 5px 20px;
     border-radius: 25px;
-    border: 1px solid #dfe1e5
+    border: 1px solid #dfe1e5;
+    color: rgba(0,0,0,.87);
 }
 
 #searchbar:hover{
@@ -119,7 +109,6 @@ nav{
     align-items: flex-start;
     margin: 7px 0px 0px 170px;
     font-size: 13px;
-    color: #5f6368;
 }
 
 nav a:visited{
@@ -127,24 +116,26 @@ nav a:visited{
     fill: currentColor;
 }
 
-.selected-nav{
-    color: rgb(26, 115, 232);
-    border-bottom: solid 2.4px rgb(26, 115, 232);
-}
 
-.selected-nav :visited{
-    color: rgb(26, 115, 232);
-}
-
-.nav-link-distance{
-    line-height: 16px;
-}
 
 .nav-link{
     display: inline-block;
     position: relative;
     padding: 16px 12px 12px 10px;
     text-align: start;
+    color: #5f6368;
+}
+
+.selected-nav{
+    color: rgb(26, 115, 232);
+}
+
+.selected-nav-border{
+    border-bottom: solid 2.4px rgb(26, 115, 232);
+}
+
+.selected-nav :visited{
+    color: rgb(26, 115, 232);
 }
 
 .flex-row{
@@ -206,7 +197,6 @@ nav a:visited{
     display: inline-block;
     width: 40px;
     height: 40px;
-    margin-right: 50px;
 }
 
 #konto img{
@@ -220,9 +210,267 @@ nav a:visited{
 }
 
 main {
-    grid-area: main;
+    margin-left: 180px;
+    width: 652px;
 }
 
-footer {
-    grid-area: footer;
+main a{
+    color: rgb(26, 13, 171);
+}
+
+main a :hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-decoration-color: rgb(26, 13, 171);
+}
+
+#search-results{
+    color: rgb(112, 117, 122);
+}
+
+.sr-only{
+    width:1px;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.website{
+    margin-bottom: 32px;
+}
+
+em {
+    font-weight: bold;
+    font-style: normal; 
+}
+
+.link{
+    font-size: 20px;
+    line-height: 0px;
+    font-weight: normal;
+}
+
+.domain{
+    line-height: 10px;
+    color: rgb(32, 33, 36);
+}
+
+.page{
+    color: rgb(95, 99, 104);
+}
+
+.domain:hover, .page:hover{
+    text-decoration: none;
+}
+
+.date{
+    color: rgb(112, 117, 122);
+}
+
+.desc{
+    margin-top: -5px;
+    width: 600px;
+    line-height: 22px;
+    color: rgb(77, 81, 86);
+}
+
+.question-symbol{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    fill: rgb(112, 117, 122);
+}
+
+#questions-container{
+    width: 652px;
+    color: rgb(32, 33, 36);
+    margin-bottom: 40px;
+}
+
+#questions-title{
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+    line-height: 26px;
+}
+
+.question-container{
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: solid 1px rgba(204, 200, 200, 0.4);
+    font-size: 16px;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.hover:hover{
+    text-decoration: underline;
+}
+
+.hover em:hover{
+    text-decoration-thickness: 1px;
+}
+
+#requests-container{
+    font-size: 16px;
+}
+
+.request-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#requests-container a{
+    color: rgba(0,0,0,.87);
+}
+
+#requests-container a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+}
+
+#requests-container a em:hover{
+    text-decoration-thickness: 1px;
+}
+
+#requests-container h3{
+    font-weight: normal;
+}
+
+.request{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width:315px;
+    height: 45px;
+    border-radius: 30px;
+    background-color: rgb(241, 243, 244);
+    margin-bottom: 8px;
+}
+
+.request-container a{
+    max-width: 227px;
+}
+
+.mg{
+    width: 20px;
+    height: 20px;
+    fill: rgba(0,0,0,.54);
+    padding: 0 25px;
+}
+
+#G{
+    width: 28px;
+    height: 50px;
+    background: url("/images/nav_logo.webp") -24px 0/167px;
+    position: relative;
+    left: 2px;
+}
+
+.sel-o {
+    width: 20px;
+    height: 20px;
+    background: url("/images/nav_logo.webp") -52px -10px/167px;
+    padding-bottom: 10px;
+}
+
+.cont-o{
+    width: 20px;
+    height: 40px;
+    margin: 0 0.5px;
+    text-align: center;
+}
+
+.o {
+    width: 20px;
+    height: 20px;
+    background: url("/images/nav_logo.webp") -75px -10px/167px;
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+#gle{
+    width: 99px;
+    height: 40px;
+    padding-bottom: 0px;
+    background: url("/images/nav_logo.webp") -96px 0px/167px no-repeat;
+    position: relative;
+    right: 4px
+}
+
+#cont-gle{
+    width: 99px;
+    height: 50px;
+    margin: 0 3px;
+    text-align: right;
+}
+
+#google {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+#google a {
+    color:rgb(66, 133, 244);
+}
+
+#google a:hover {
+    text-decoration: underline;
+}
+
+footer{
+    background-color: rgb(242, 242, 242);
+    color: rgba(0, 0, 0, 0.54);
+}
+
+footer a:visited{
+    color: rgba(0, 0, 0, 0.54);
+}
+
+footer a{
+    color: rgba(0, 0, 0, 0.54);
+}
+
+footer a:hover{
+    color: rgba(0, 0, 0, 0.84);
+}
+
+#footer-upper{
+    margin-top: 40px;
+    padding: 5px 0 5px 153px;
+    border-top: solid 1px rgb(218, 218, 218);
+    border-bottom: solid 1px rgb(218, 218, 218);
+}
+
+#footer-lower{
+    padding: 15px 0 15px 153px;
+}
+
+#country{
+    border-right: solid 1px rgb(218, 218, 218);
+    padding: 7px 15px 7px 27px;
+}
+
+#ball{
+    height: 10.5px;
+    width: 10.5px;
+    border-radius: 100%;
+    background-color: #5f6368;
+    margin-left: 10px;
+    margin-right: 2px;
+}
+
+#city{
+    color: rgba(0, 0, 0, 0.69);
+}
+
+.pad{
+    padding-left: 27px;
 }

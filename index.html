@@ -5,138 +5,390 @@
   <meta charset="utf-8">
   <title>build this webpage - Google Suche</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body>
-  <div id="container">
-    <header>
-      <div id="header-upper">
+  <header>
+    <div id="header-upper">
 
-        <div id="header-left">
-          <div id="logo">
-            <a href="#">
-              <img src="images/googlelogo.png" alt="Google Logo" width="92" height="30">
-            </a>
-          </div>
-
-          <div id="searchform">
-            <input id="searchbar" type="text">
-
-            <div id="buttons">
-              <div class="button-width close-color">
-                <svg viewBox="0 0 24 24">
-                  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
-                </svg>
-              </div>
-    
-              <span id="divider" class="button-spacing"></span>
-
-              <div class="button-width button-spacing mglas-color">
-                <svg viewBox="0 0 24 24">
-                  <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-                </svg>
-              </div>
-
-            </div>
-          </div>
+      <div id="header-left">
+        <div id="logo">
+          <a href="#">
+            <img src="images/googlelogo.png" alt="Google Logo" width="92" height="30">
+          </a>
         </div>
 
-        <div id="header-right">
-          <div id="apps">
-            <a href="#">
-              <svg id="apps-img" viewBox="0 0 24 24">
-                <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+        <div id="searchform">
+          <input id="searchbar" type="text" value="build this webpage">
+
+          <div id="buttons">
+            <div class="button-width close-color">
+              <svg viewBox="0 0 24 24">
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
               </svg>
-            </a>
-          </div>
+            </div>
+  
+            <span id="divider" class="button-spacing"></span>
 
-          <div id="konto">
-            <a href="#">
-              <img src="images/user-img.png" alt="Profile picture">
-            </a>
+            <div class="button-width button-spacing mglas-color">
+              <svg viewBox="0 0 24 24">
+                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+              </svg>
+            </div>
+
           </div>
         </div>
-
       </div>
 
-      <nav id="header-below">
+      <div id="header-right">
+        <div id="apps">
+          <a href="#">
+            <svg id="apps-img" viewBox="0 0 24 24">
+              <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+            </svg>
+          </a>
+        </div>
 
-        <div id="nav-left" class="flex-row">
+        <div id="konto">
+          <a href="#">
+            <img src="images/user-img.png" alt="Profile picture">
+          </a>
+        </div>
+      </div>
 
-          <div class="nav-link-distance selected-nav">
-            <a class="nav-link" href="#">
-              <span class="symbols-size">
-                <svg viewBox="0 0 24 24">
-                  <path fill="#34a853" d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8"></path>
-                  <path fill="#ea4335" d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6"></path>
-                  <path fill="#fbbc04" d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6"></path>
-                  <path fill="#4285f4" d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59"></path>
-                </svg>
-              </span>
-            Alle</a>
-          </div>
+    </div>
 
-          <div class="nav-link-distance">
-            <a class="nav-link" href="#">
-              <span class="symbols-size">
-                <svg viewBox="0 0 24 24">
-                  <path d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2"></path>
-                </svg>
-              </span>
-            News</a>
-          </div>
+    <nav id="header-below">
 
-          <div class="nav-link-distance">
-            <a class="nav-link" href="#">
-              <span class="symbols-size">
-                <svg viewBox="0 0 16 16">
-                  <path d="M7.503 0c3.09 0 5.502 2.487 5.502 5.427 0 2.337-1.13 3.694-2.26 5.05-.454.528-.906 1.13-1.358 1.734-.452.603-.754 1.508-.98 1.96-.226.452-.377.829-.904.829-.528 0-.678-.377-.905-.83-.226-.451-.527-1.356-.98-1.959-.452-.603-.904-1.206-1.356-1.734C3.132 9.121 2 7.764 2 5.427 2 2.487 4.412 0 7.503 0zm0 1.364c-2.283 0-4.14 1.822-4.14 4.063 0 1.843.86 2.873 1.946 4.177.468.547.942 1.178 1.4 1.79.34.452.596.99.794 1.444.198-.455.453-.992.793-1.445.459-.61.931-1.242 1.413-1.803 1.074-1.29 1.933-2.32 1.933-4.163 0-2.24-1.858-4.063-4.139-4.063zm0 2.734a1.33 1.33 0 11-.001 2.658 1.33 1.33 0 010-2.658"></path>
-                </svg>
-              </span>
-            Maps</a>
-          </div>
+      <div id="nav-left" class="flex-row">
 
-          <div class="nav-link-distance">
-            <a class="nav-link" href="#">
-              <span class="symbols-size">
-                <svg viewBox="0 0 24 24">
-                  <path d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5"></path>
-                </svg>
-              </span> 
-            Videos</a>
-          </div>
-
-          <div class="nav-link-distance">
-            <a class="nav-link" href="#">
-              <span class="symbols-size">
-                <svg viewBox="0 0 24 24">
-                  <path d="M21.11 2.89A3.02 3.02 0 0 0 18.95 2h-5.8c-.81 0-1.58.31-2.16.89L7.25 6.63 2.9 10.98a3.06 3.06 0 0 0 0 4.32l5.79 5.8a3.05 3.05 0 0 0 4.32.01l8.09-8.1c.58-.58.9-1.34.9-2.16v-5.8c0-.81-.32-1.59-.89-2.16zM20 10.85c0 .28-.12.54-.32.74l-3.73 3.74-4.36 4.36c-.41.41-1.08.41-1.49 0l-2.89-2.9-2.9-2.9a1.06 1.06 0 0 1 0-1.49l8.1-8.1c.2-.2.46-.3.74-.3l5.8-.01A1.05 1.05 0 0 1 20 5.05v5.8zM16 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2"></path>
-                </svg>
-              </span> 
-            Shopping</a>
-          </div>
-
-          <div class="nav-link-distance">
-            <a class="nav-link" href="#">
+        <div class="selected-nav-border">
+          <a class="nav-link selected-nav" href="#">
             <span class="symbols-size">
               <svg viewBox="0 0 24 24">
-                <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+                <path fill="#34a853" d="M10 2v2a6 6 0 0 1 6 6h2a8 8 0 0 0-8-8"></path>
+                <path fill="#ea4335" d="M10 4V2a8 8 0 0 0-8 8h2c0-3.3 2.7-6 6-6"></path>
+                <path fill="#fbbc04" d="M4 10H2a8 8 0 0 0 8 8v-2c-3.3 0-6-2.69-6-6"></path>
+                <path fill="#4285f4" d="M22 20.59l-5.69-5.69A7.96 7.96 0 0 0 18 10h-2a6 6 0 0 1-6 6v2c1.85 0 3.52-.64 4.88-1.68l5.69 5.69L22 20.59"></path>
               </svg>
-            </span>  
-            Mehr</a>
-          </div>
-        </div>
-        
-        <div id="nav-right" class="flex-row">
-          <div class="nav-link-distance">
-            <a class="nav-link" href="#">Einstellungen</a>
-          </div>
-          <div class="nav-link-distance">
-            <a class="nav-link" href="#">Suchfilter</a>
-          </div>
+            </span>
+          Alle</a>
         </div>
 
-      </nav>
-    </header>
+        <div>
+          <a class="nav-link" href="#">
+            <span class="symbols-size">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 11h6v2h-6v-2zm-6 6h12v-2H6v2zm0-4h4V7H6v6zm16-7.22v12.44c0 1.54-1.34 2.78-3 2.78H5c-1.64 0-3-1.25-3-2.78V5.78C2 4.26 3.36 3 5 3h14c1.64 0 3 1.25 3 2.78zM19.99 12V5.78c0-.42-.46-.78-1-.78H5c-.54 0-1 .36-1 .78v12.44c0 .42.46.78 1 .78h14c.54 0 1-.36 1-.78V12zM12 9h6V7h-6v2"></path>
+              </svg>
+            </span>
+          News</a>
+        </div>
+
+        <div>
+          <a class="nav-link" href="#">
+            <span class="symbols-size">
+              <svg viewBox="0 0 16 16">
+                <path d="M7.503 0c3.09 0 5.502 2.487 5.502 5.427 0 2.337-1.13 3.694-2.26 5.05-.454.528-.906 1.13-1.358 1.734-.452.603-.754 1.508-.98 1.96-.226.452-.377.829-.904.829-.528 0-.678-.377-.905-.83-.226-.451-.527-1.356-.98-1.959-.452-.603-.904-1.206-1.356-1.734C3.132 9.121 2 7.764 2 5.427 2 2.487 4.412 0 7.503 0zm0 1.364c-2.283 0-4.14 1.822-4.14 4.063 0 1.843.86 2.873 1.946 4.177.468.547.942 1.178 1.4 1.79.34.452.596.99.794 1.444.198-.455.453-.992.793-1.445.459-.61.931-1.242 1.413-1.803 1.074-1.29 1.933-2.32 1.933-4.163 0-2.24-1.858-4.063-4.139-4.063zm0 2.734a1.33 1.33 0 11-.001 2.658 1.33 1.33 0 010-2.658"></path>
+              </svg>
+            </span>
+          Maps</a>
+        </div>
+
+        <div>
+          <a class="nav-link" href="#">
+            <span class="symbols-size">
+              <svg viewBox="0 0 24 24">
+                <path d="M10 16.5l6-4.5-6-4.5v9zM5 20h14a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1zm14.5 2H5a3 3 0 0 1-3-3V4.4A2.4 2.4 0 0 1 4.4 2h15.2A2.4 2.4 0 0 1 22 4.4v15.1a2.5 2.5 0 0 1-2.5 2.5"></path>
+              </svg>
+            </span> 
+          Videos</a>
+        </div>
+
+        <div>
+          <a class="nav-link" href="#">
+            <span class="symbols-size">
+              <svg viewBox="0 0 24 24">
+                <path d="M21.11 2.89A3.02 3.02 0 0 0 18.95 2h-5.8c-.81 0-1.58.31-2.16.89L7.25 6.63 2.9 10.98a3.06 3.06 0 0 0 0 4.32l5.79 5.8a3.05 3.05 0 0 0 4.32.01l8.09-8.1c.58-.58.9-1.34.9-2.16v-5.8c0-.81-.32-1.59-.89-2.16zM20 10.85c0 .28-.12.54-.32.74l-3.73 3.74-4.36 4.36c-.41.41-1.08.41-1.49 0l-2.89-2.9-2.9-2.9a1.06 1.06 0 0 1 0-1.49l8.1-8.1c.2-.2.46-.3.74-.3l5.8-.01A1.05 1.05 0 0 1 20 5.05v5.8zM16 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2"></path>
+              </svg>
+            </span> 
+          Shopping</a>
+        </div>
+
+        <div>
+          <a class="nav-link" href="#">
+          <span class="symbols-size">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path>
+            </svg>
+          </span>  
+          Mehr</a>
+        </div>
+      </div>
+      
+      <div id="nav-right" class="flex-row">
+        <div>
+          <a class="nav-link" href="#">Einstellungen</a>
+        </div>
+        <div>
+          <a class="nav-link" href="#">Suchfilter</a>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+    <p id="search-results">Ungefähr 111.000.000 Ergebnisse (0,53 Sekunden)</p>
+    <h2 class="sr-only">Webergebnisse</h2>
+
+    <div class="website">
+      <a href="#">
+        <p class="domain">victor-if.github.io <span class="page">› google-search-...</span></p>
+        <h3 class="link">build this webpage - GitHub Pages</h3>
+      </a>
+      <p class="desc">
+        TO CREATE A <em>WEBSITE</em> WITH WORDPRESS (OR JOOMLA & DRUPAL), USE ONE CLICK INSTALLATION: Log in to your hosting account. Go to your control panel. Look for the “WordPress” or “<em>Website</em>” icon. Choose the domain where you want to install your <em>website</em>.
+      </p>
+    </div>
+
+    <div class="website">
+      <a href="#">
+        <p class="domain">christine-27.github.io <span class="page">› google-ho...</span></p>
+        <h3 class="link">build this webpage - GitHub Pages</h3>
+      </a>
+      <p class="desc">
+        With zero coding experience, artist <em>building</em> 180 <em>webpages</em> . ... days ago, having never done any programming in her life, Jennifer Dewalt <em>built</em> her first <em>webpage</em>.
+      </p>
+    </div>
+
+    <div class="website">
+      <a href="#">
+        <p class="domain">www.websitebuilderexpert.com <span class="page">› b</span></p>
+        <h3 class="link">How to Build a Website 2021 | A Step-by-Step Beginner's Guide</h3>
+      </a>
+      <p class="desc">
+        <span class="date">01.02.2021 —</span> Anyone can <em>build</em> a <em>website</em> with the right tools - and the right guide! We'll show you how to make yours in just 9 steps.
+      </p>
+    </div>
+
+    <div class="website">
+      <a href="#">
+        <p class="domain">websitesetup.org</p>
+        <h3 class="link">How to Create a Website: Step-by-Step Guide for Beginners ...</h3>
+      </a>
+      <p class="desc">
+        <span class="date">25.01.2021 —</span> Learn how to make a <em>website</em> and set it up. This site contains different tutorials on how to <em>build</em> a <em>website</em> using WordPress, Joomla, Drupal ...
+      </p>
+    </div>
+
+    <div id="questions-container">
+      <h2 id="questions-title">Ähnliche Fragen</h2>
+      <div id="questions">
+
+        <div class="question-container">
+          <span class="question">How can I create my own webpage?</span>
+          <span class="question-symbol">
+            <svg viewBox="0 0 24 24">
+              <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+            </svg>
+          </span>
+        </div>
+        
+        <div class="question-container">
+          <span class="question">Is it hard to build a Web page?</span>
+          <span class="question-symbol">
+            <svg viewBox="0 0 24 24">
+              <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+            </svg>
+          </span>
+        </div>
+
+        <div class="question-container">
+          <span class="question">How much does it cost to build a website?</span>
+          <span class="question-symbol">
+            <svg viewBox="0 0 24 24">
+              <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+            </svg>
+          </span>
+        </div>
+      </div>
   </div>
+
+  <div class="website">
+    <a href="#">
+      <p class="domain">makeawebsitehub.com</p>
+      <h3 class="link">Make Your Own Website in Just 1 Hour With This Easy Guide ...</h3>
+    </a>
+    <p class="desc">
+      This site teaches you how to make a <em>website</em> in just 3 easy to follow steps. There's also lots of really useful resources to help you <em>build</em> traffic in 2021.
+    </p>
+  </div>
+
+  <div class="website">
+    <a href="#">
+      <p class="domain">neilpatel.com <span class="page">› blog </span><span class="page">› from-0-to-l...</span></p>
+      <h3 class="link">Build a Website: 6 Steps From 0 to Launch - Neil Patel</h3>
+    </a>
+    <p class="desc">
+      Ready to build a <em>website</em>? Here's step by step guide to <em>building</em> and opimizing your first <em>website</em> including what hosting and CMS to use.
+    </p>
+  </div>
+
+  <div class="website">
+    <a href="#">
+      <p class="domain">www.pcmag.com <span class="page">› how-to </span><span class="page">› how-...</span></p>
+      <h3 class="link">How to Create a Website | PCMag</h3>
+    </a>
+    <p class="desc">
+      If you need to quickly <em>build</em> a simple <em>website</em>, starting with a blogging service is a great way to go. Advertisement. The major player in the blog game is WordPress, ...
+    </p>
+  </div>
+
+  <div class="website">
+    <a href="#">
+      <p class="domain">www.squarespace.com</p>
+      <h3 class="link">Squarespace: Build a Website – Website Builder</h3>
+    </a>
+    <p class="desc">
+      Squarespace is the all-in-one solution for anyone looking to create a beautiful <em>website</em>. Domains, eCommerce, hosting, galleries, analytics, and 24/7 support all ...
+    </p>
+  </div>
+
+  <div class="website">
+    <a href="#">
+      <p class="domain">www.webhostingsecretrevealed.net <span class="page">› ...</span></p>
+      <h3 class="link">How to Create a Website: Step-by-Step Tutorial</h3>
+    </a>
+    <p class="desc">
+      <span class="date">Weiter zu <a href="#" class="hover"><em>Creating</em> from scratch</a> —</span> <em>Creating</em> from scratch; Using a content management system (CMS); Using a <em>website</em> builder. You get more flexibility in ...
+    </p>
+  </div>
+
+  <div class="website">
+    <a href="#">
+      <p class="domain">www.codecademy.com <span class="page">› paths </span><span class="page">› le...</span></p>
+      <h3 class="link">Build a Website with HTML, CSS, and Github Pages ...</h3>
+    </a>
+    <p class="desc">
+      One of the best ways to start coding is by <em>building</em> websites. Whether you want to tweak your business's site, hone your <em>web</em> development skills, or learn to ...
+    </p>
+  </div>
+
+  <div id="requests-container">
+    <h3>Verwandte Suchanfragen</h3>
+
+    <div class="request-container">
+      <div class="request">
+        <div class="mg">
+          <svg viewBox="0 0 24 24">
+            <path d="M20.49 19l-5.73-5.73C15.53 12.2 16 10.91 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.41 0 2.7-.47 3.77-1.24L19 20.49 20.49 19zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z"></path>
+          </svg>
+        </div>
+        <a href="#"><em>how to </em>build<em> a website from scratch</em></a>
+      </div>
+      <div class="request">
+        <div class="mg">
+          <svg viewBox="0 0 24 24">
+            <path d="M20.49 19l-5.73-5.73C15.53 12.2 16 10.91 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.41 0 2.7-.47 3.77-1.24L19 20.49 20.49 19zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z"></path>
+          </svg>
+        </div>
+        <a href="#"><em>html website from scratch</em></a>
+      </div>
+    </div>
+
+    <div class="request-container">
+      <div class="request">
+        <div class="mg">
+          <svg viewBox="0 0 24 24">
+            <path d="M20.49 19l-5.73-5.73C15.53 12.2 16 10.91 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.41 0 2.7-.47 3.77-1.24L19 20.49 20.49 19zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z"></path>
+          </svg>
+        </div>
+        <a href="#"><em>how to create a website html</em></a>
+      </div>
+      <div class="request">
+        <div class="mg">
+          <svg viewBox="0 0 24 24">
+            <path d="M20.49 19l-5.73-5.73C15.53 12.2 16 10.91 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.41 0 2.7-.47 3.77-1.24L19 20.49 20.49 19zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z"></path>
+          </svg>
+        </div>
+        <a href="#">build <em>website with php</em></a>
+      </div>
+    </div>
+
+    <div class="request-container">
+      <div class="request">
+        <div class="mg">
+          <svg viewBox="0 0 24 24">
+            <path d="M20.49 19l-5.73-5.73C15.53 12.2 16 10.91 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.41 0 2.7-.47 3.77-1.24L19 20.49 20.49 19zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z"></path>
+          </svg>
+        </div>
+        <a href="#"><em>best way to program website</em></a>
+      </div>
+      <div class="request">
+        <div class="mg">
+          <svg viewBox="0 0 24 24">
+            <path d="M20.49 19l-5.73-5.73C15.53 12.2 16 10.91 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.41 0 2.7-.47 3.77-1.24L19 20.49 20.49 19zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z"></path>
+          </svg>
+        </div>
+        <a href="#"><em>best way to </em>build<em> a website</em></a>
+      </div>
+    </div>
+
+    <div class="request-container">
+      <div class="request">
+        <div class="mg">
+          <svg viewBox="0 0 24 24">
+            <path d="M20.49 19l-5.73-5.73C15.53 12.2 16 10.91 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.41 0 2.7-.47 3.77-1.24L19 20.49 20.49 19zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z"></path>
+          </svg>
+        </div>
+        <a href="#"><em>best website builder</em></a>
+      </div>
+      <div class="request">
+        <div class="mg">
+          <svg viewBox="0 0 24 24">
+            <path d="M20.49 19l-5.73-5.73C15.53 12.2 16 10.91 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.41 0 2.7-.47 3.77-1.24L19 20.49 20.49 19zM5 9.5C5 7.01 7.01 5 9.5 5S14 7.01 14 9.5 11.99 14 9.5 14 5 11.99 5 9.5z"></path>
+          </svg>
+        </div>
+        <a href="#"><em>how to </em>build<em> website javascript</em></a>
+      </div>
+    </div>
+  </div>
+
+  <div id="google">
+    <div id="G"></div>
+    <div class="cont-o"><span class="sel-o"></span>1</div>
+    <a href="#" class="cont-o"><span class="o"></span>2</a>
+    <a href="#" class="cont-o"><span class="o"></span>3</a>
+    <a href="#" class="cont-o"><span class="o"></span>4</a>
+    <a href="#" class="cont-o"><span class="o"></span>5</a>
+    <a href="#" class="cont-o"><span class="o"></span>6</a>
+    <a href="#" class="cont-o"><span class="o"></span>7</a>
+    <a href="#" class="cont-o"><span class="o"></span>8</a>
+    <a href="#" class="cont-o"><span class="o"></span>9</a>
+    <a href="#" class="cont-o"><span class="o"></span>10</a>
+    <a href="#" id="cont-gle"><span id="gle"></span>Weiter</a>
+  </div>
+
+  </main>
+
+  <footer>
+    <div id="footer-upper">
+      <span id="country">Deutschland</span>
+      <span id="ball"></span>
+      <span id="city"><em>Ostheim, Köln -</em></span>
+      <span> Laut meiner IP-Adresse - </span>
+      <a href="#">Genauen Standort verwenden</a>
+      <span> - </span>
+      <a href="#">Weitere Informationen</a>
+    </div>
+
+    <div id="footer-lower">
+      <a class="pad" href="#">Hilfe</a>
+      <a class="pad" href="#">Feedback geben</a>
+      <a class="pad" href="#">Datenschutzerklärung</a>
+      <a class="pad" href="#">Nutzungsbedingungen</a>
+    </div>
+  </footer>
 </body>
 </html>
